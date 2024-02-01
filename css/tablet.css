@@ -1,0 +1,47 @@
+.nav__menu{ 
+    justify-content: flex-start;
+    margin: 20px auto;
+}
+
+.hamburguer-menu, .menu--info-proyect{
+    visibility: hidden;
+}
+
+.menu--info-project--desplegado ul{
+    visibility:visible;
+
+}
+
+.nav__menu p{
+    visibility: visible;
+    margin: 20px;
+}
+
+.form__inbox textarea{
+    width: 90%;   
+    padding: 20px;
+}
+
+
+.form__buttons{
+    display: flex; 
+}
+
+.btn{
+    margin: 0 10px;
+}
+
+
+.form__outbox--result textarea{ 
+    max-height: 400px;
+    min-height: 300px;
+    overflow-y: auto;    
+}
+
+footer .left ul{    
+    font-size: 1.2rem;
+}
+
+.right a{     
+    font-size: 1.2rem;
+}

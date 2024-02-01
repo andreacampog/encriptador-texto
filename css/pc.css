@@ -1,0 +1,52 @@
+nav{
+   width: 80%;
+   margin: 0 auto;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.form__inbox textarea{  
+    min-height: 400px;  
+    font-size: 1.6rem;
+}
+
+.form__buttons{
+    margin-bottom: 20px;
+}
+
+.form__outbox{   
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    background: var(--white);
+    border-radius: 20px;
+}
+
+.form__outbox--img{
+    display: block;
+    background-image: url(/img/imagen_pc.jpg);
+    margin-top: 20px;
+}
+
+.outbox-container{
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;    
+    margin: 0 auto; 
+}
+
+.hero__img{
+    display: none;
+}
+
+footer .left ul{    
+    font-size: 1.4rem;    
+}
+
+.right a{  
+    font-size: 1.4rem;    
+}

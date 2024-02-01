@@ -1,0 +1,40 @@
+nav{
+    width: 100%;
+    margin: 0 auto;
+ }
+ 
+ .form__inbox textarea{  
+     min-height: 550px;  
+     min-width: 700px;
+     font-size: 1.6rem;
+ }
+ 
+ .form__buttons{
+    min-width: 750px;
+ }
+ 
+ .form__outbox{   
+     min-width: 500px;
+     min-height: 700px;
+ }
+
+ .form__outbox--result{
+    max-width: 600px;  
+ }
+
+
+ .form__outbox--result textarea{ 
+    max-height: 600px;
+    min-height: 420px;
+    overflow-y: auto;
+    padding: 5px;
+} 
+
+ 
+ .outbox-container{
+
+     min-width: 500px;
+     max-width: 700px;    
+ }
+
+ 
