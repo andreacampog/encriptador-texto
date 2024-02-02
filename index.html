@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="/css/pcmax.css" media="(min-width:1680px)">
 </head>
 
-<body>
+<body class="light-mode">
 
     <header>
         <nav class="nav">
             <section class="nav__menu">
-                <img onclick="menuHamburguesa();" class="hamburguer-menu" src="./icons/icon_menu.svg" alt="icono menu hamburguesa">                 
+                <img onclick="menuHamburguesa();" class="hamburguer-menu" src="./icons/blueburguer.png" alt="icono menu hamburguesa">                 
                 <div class="menu--info-proyect" > 
                     <ul> 
                         <li><a href="https://trello.com/b/inCeeXJB/desarrollo-de-challenge-alura">Trello del proyecto</a></li>
@@ -39,9 +39,8 @@
                               
             </section>
 
-            <section class="nav__icons" >
-                <a href="https://www.aluracursos.com/?gad_source=1&gclid=Cj0KCQiAn-2tBhDVARIsAGmStVmA1W7QdjJ45wypinKneoEVvtT6BAK3M7MRe-DeRVQ3qNEAiuGcSTEaAnpfEALw_wcB"><img src="/icons/logo.jpg" alt="icono logo alura latam"></a>
-                <img src="/icons/logo-one.png" alt="icono logo one next">
+            <section class="nav__icons" >    
+                <a id= "toogle-button" href="#"><img id="img-toogle-buttton" src="./icons/moon.png" alt=""></a>
             </section>
         </nav> 
        
@@ -64,7 +63,6 @@
         
 
         <section class="outbox-container" >
-
             <section class="form__outbox">
                 <div class="form__outbox--img" > 
                     <img src="/img/imagen_pc.jpg" class="msg--img">
@@ -93,15 +91,14 @@
 
     <footer>
         <section class="left">
-            <ul>
-                <li>Creado por:</li>
+            <ul>      
                 <li><a href="https://www.linkedin.com/in/andrea-campo-585bb31a/">Linkedin</a></li>
                 <li><a href="https://github.com/andreacampog">Github</a></li>
             </ul>
         </section>
 
         <section class="right">
-            <img src="/icons/insta_log.webp" alt="">
+            <img src="./icons/insta_log.webp" alt="">
             <a href="https://www.instagram.com/andrea_campog?igsh=MWNvNzBjcWQ2dXNnYw%3D%3D&utm_source=qr">Instagram</a>
         </section>      
     </footer>

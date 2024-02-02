@@ -1,47 +1,53 @@
-.nav__menu{ 
-    justify-content: flex-start;
-    margin: 20px auto;
-}
-
 .hamburguer-menu, .menu--info-proyect{
     visibility: hidden;
 }
 
 .menu--info-project--desplegado ul{
     visibility:visible;
-
 }
 
-.nav__menu p{
-    visibility: visible;
-    margin: 20px;
+.menu--info-project--desplegado ul li a{
+    font-size: 1.8rem;
 }
 
-.form__inbox textarea{
-    width: 90%;   
-    padding: 20px;
+.form__inbox textarea{   
+    font-size: 1.8rem;
+    min-height: 400px;
+
 }
-
-
 .form__buttons{
-    display: flex; 
-}
+    display: flex;    
 
+}
 .btn{
-    margin: 0 10px;
+    width: 50%;
+    margin: 0 0.5em;
+    font-size: 2.4rem;
 }
 
+.form__outbox--msg h5 {
+    padding: 1.4em;
+    font-size: 1.6rem;
+}
 
 .form__outbox--result textarea{ 
     max-height: 400px;
-    min-height: 300px;
-    overflow-y: auto;    
+    font-size: 1.8rem;
+    margin-bottom: 2em;
 }
 
-footer .left ul{    
-    font-size: 1.2rem;
+.hero__img{    
+    min-width: 768px; 
+    min-height: 400px; 
+    max-width: 980px;
+    margin: 10px auto;     
+    background-size:cover;
+}
+
+footer .left ul li a{    
+    font-size: 1.8rem;
 }
 
 .right a{     
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
