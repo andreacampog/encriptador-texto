@@ -139,13 +139,14 @@ btnToogle.addEventListener("click",function(){
     let body = document.querySelector("body");
     if (body.classList.contains("dark-mode")){
         body.classList.remove("dark-mode");
-        img.setAttribute("src", "/icons/moon.png");
+        img.setAttribute("src", "./icons/moon.png");
     }else{
         body.classList.add("dark-mode");
-        img.setAttribute("src", "/icons/sun.png");
+        img.setAttribute("src", "./icons/sun.png");
     }});
-    
+
+
 
 
     
-  
+

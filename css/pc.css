@@ -1,6 +1,14 @@
+body{
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+
 main{
     display: flex;
     align-items: center;
+    padding-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .form__box{    
@@ -33,7 +41,7 @@ main{
 }
 .form__outbox--img{
     display: block;
-    background-image: url(/img/imagen_pc.jpg);
+    background-image: url(./icons/Loupe.png);
     margin-top: 2em;
 }
 
@@ -59,8 +67,11 @@ main{
 
 .hero__img{
     display: none;
+    margin-bottom: 1em;
 }
+
 footer section{
-    padding-top: 0;
     padding-bottom: 0;
+    padding-top: 0;
 }
+
