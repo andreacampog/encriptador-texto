@@ -1,53 +1,63 @@
-.hamburguer-menu, .menu--info-proyect{
+.hamburguer, .links{
     visibility: hidden;
 }
 
-.menu--info-project--desplegado ul{
-    visibility:visible;
-}
-
-.menu--info-project--desplegado ul li a{
-    font-size: 1.8rem;
-}
-
-.form__inbox textarea{   
-    font-size: 1.8rem;
-    min-height: 400px;
-
-}
-.form__buttons{
+.links-deployed{
     display: flex;    
+    justify-content: space-between; 
+    visibility: visible; 
+    list-style: none;
+}
+
+.links_deployed .links_item{
+    font-size: 1.8rem;   
+    color: var(--text-color);
+}
+
+.main__form{
+    width: 100%;  
 
 }
-.btn{
-    width: 50%;
-    margin: 0 0.5em;
+.input__textarea{   
+    font-size: 1.8rem;
+    min-height: 300px;
+}
+
+
+.buttons{
+    display: flex;    
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 2em;
+}
+
+
+.buttons__btn{ 
+    width: 40%;
+    margin: 0 auto;   
     font-size: 2.4rem;
 }
 
-.form__outbox--msg h5 {
-    padding: 1.4em;
+.main__output{
+    width: 100%;
+}
+.container__message h5 {
+
     font-size: 1.6rem;
 }
 
-.form__outbox--result textarea{ 
-    max-height: 400px;
-    font-size: 1.8rem;
-    margin-bottom: 2em;
-}
 
-.hero__img{    
+.hero{    
     min-width: 768px; 
     min-height: 400px; 
     max-width: 980px;
-    margin: 10px auto;     
+    margin: 1em auto;     
     background-size:cover;
 }
 
-footer .left ul li a{    
-    font-size: 1.8rem;
+.footer__socials{
+    width: 50%;
 }
-
-.right a{     
+.social-link{    
     font-size: 1.8rem;
 }

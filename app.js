@@ -1,7 +1,7 @@
 let btnCopiar = document.querySelector(".copiar");
-let cuadroMensajes = document.querySelector(".form__outbox--msg");
-let imagen = document.querySelector(".msg--img");
-let cuadroResultado = document.querySelector(".form__outbox--result");
+let cuadroMensajes = document.querySelector(".container__message");
+let imagen = document.querySelector(".search-img");
+let cuadroResultado = document.querySelector(".container__result");
 let textoDesencriptado = document.querySelector("#result");
 
 
@@ -13,12 +13,20 @@ function limpiarTextArea(){
 }
 
 
+function clearDefaultText() {
+    let textoEntrada = document.querySelector("#entrada");
+    //console.log("click por fuera")
+    if (textoEntrada.value === " ") {      
+        textoEntrada.value = "Ingrese el texto aquí:"
+    }     
+}
+
 
 function validarEntrada(){   
     btnCopiar.classList.remove("ocultar");
     let textoEntrada = document.querySelector("#entrada").value;
-    let contenido = textoEntrada.trim(); //quito espacios y tabulaciones
-    if (contenido === '') {
+    let contenido = textoEntrada.trim(); //quito espacios y tabulaciones    
+    if (contenido === '' || contenido === 'Ingrese el texto aquí:') {
         //alert('El texto no puede estar en blanco.'); 
         textoEntrada.focus(); // Con esto espero por el text area de nuevo     
         validarEntrada();       
@@ -54,14 +62,16 @@ function mostrarResultado(resultado){
     ocultarElemento(imagen);
     ocultarElemento(cuadroMensajes);
     cuadroResultado.style.display = 'block';
+    
     textoDesencriptado.innerHTML = resultado;    
 }
 
 function copiarElemento(){
     let texto = document.querySelector("#result");
     let contenidoTexto = texto.innerHTML;
-    navigator.clipboard.writeText(contenidoTexto);  
+    navigator.clipboard.writeText(contenidoTexto);      
     btnCopiar.classList.toggle("ocultar");
+    //btnCopiar.setAttribute("hidden",true);
     //alert("Copiado con exito");
     
 }
@@ -105,8 +115,8 @@ function procesoDesencriptar(texto){
 
 
 function menuHamburguesa(){
-    let menuHamburguesa = document.querySelector('.hamburguer-menu');
-    let contenido = document.querySelector('.menu--info-proyect');   
+    let menuHamburguesa = document.querySelector('.hamburguer');
+    let contenido = document.querySelector('.links');   
     menuHamburguesa.classList.toggle('menu-abierto');
     contenido.classList.toggle('menu-abierto');
 
@@ -116,8 +126,8 @@ function menuHamburguesa(){
 // Agrega un evento de clic al documento
 
 document.addEventListener('click', function(event) {
-    let menuHamburguesa = document.querySelector('.hamburguer-menu');
-    let contenido = document.querySelector('.menu--info-proyect');   
+    let menuHamburguesa = document.querySelector('.hamburguer');
+    let contenido = document.querySelector('.links');   
     const estaDentroDelMenu = menuHamburguesa.contains(event.target);
     
     
@@ -131,11 +141,12 @@ document.addEventListener('click', function(event) {
 
 
 
-let btnToogle = document.querySelector("#toogle-button");
-let img= document.querySelector("#img-toogle-buttton");
+// utilizo un interruptor para los modos de luz
+
+let btnToogle = document.querySelector("#toogle-btn");
+let img= document.querySelector("#toogle-btn--img");
     
 btnToogle.addEventListener("click",function(){
-
     let body = document.querySelector("body");
     if (body.classList.contains("dark-mode")){
         body.classList.remove("dark-mode");
@@ -143,10 +154,5 @@ btnToogle.addEventListener("click",function(){
     }else{
         body.classList.add("dark-mode");
         img.setAttribute("src", "./icons/sun.png");
-    }});
-
-
-
-
-    
+}});
 

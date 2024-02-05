@@ -8,75 +8,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="/css/tablet.css" media="(min-width:768px)">
     <link rel="stylesheet" href="/css/pc.css" media="(min-width:1280px)">
 </head>
 
-<body class="light-mode">
-
-    <header>
+<body>
         <nav class="nav">
             <section class="nav__menu">
-                <img onclick="menuHamburguesa();" class="hamburguer-menu" src="./icons/blueburguer.png" alt="icono menu hamburguesa">                 
-                <div class="menu--info-proyect" > 
-                    <ul> 
-                        <li><a href="https://trello.com/b/inCeeXJB/desarrollo-de-challenge-alura">Trello del proyecto</a></li>
-                        <li><a href="https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript">Info Challenge</a></li>               
-                        <li><a href="https://www.figma.com/file/trP3p5nEh7XUyB3n2bomjP/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica?type=design&node-id=0-1&mode=design&t=FcJnCewsMXJHnbQP-0">Figma</a></li>
-                     </ul>
-                 </div>       
-                 <div class="menu--info-project--desplegado" >
-                    <ul>
-                        <li><a href="https://trello.com/b/inCeeXJB/desarrollo-de-challenge-alura">Trello</a></li>
-                        <li><a href="https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript">Info Challenge</a></li>               
-                        <li><a href="https://www.figma.com/file/trP3p5nEh7XUyB3n2bomjP/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica?type=design&node-id=0-1&mode=design&t=FcJnCewsMXJHnbQP-0">Figma</a></li>
-                     </ul>
-                    
-                 </div>           
-                              
+                <img class="hamburguer" onclick="menuHamburguesa();" src="./icons/blueburguer.png" alt="imagen de menu hamburguesa">                 
+                    <ul class="links"> 
+                        <li class="links_item"><a class="social-link" href="https://trello.com/b/inCeeXJB/desarrollo-de-challenge-alura">Trello del proyecto</a></li>
+                        <li class="links_item"><a class="social-link" href="https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript">Info Challenge</a></li>               
+                        <li class="links_item"><a class="social-link" href="https://www.figma.com/file/trP3p5nEh7XUyB3n2bomjP/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica?type=design&node-id=0-1&mode=design&t=FcJnCewsMXJHnbQP-0">Figma</a></li>
+                     </ul>    
+                    <ul class="links-deployed">
+                        <li class="links_item"><a  class="social-link" href="https://trello.com/b/inCeeXJB/desarrollo-de-challenge-alura">Trello</a></li>
+                        <li class="links_item"><a class="social-link"  href="https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript">Info Challenge</a></li>               
+                        <li class="links_item"><a class="social-link" href="https://www.figma.com/file/trP3p5nEh7XUyB3n2bomjP/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica?type=design&node-id=0-1&mode=design&t=FcJnCewsMXJHnbQP-0">Figma</a></li>
+                     </ul> 
             </section>
-
             <section class="nav__icons" >    
-                <a id= "toogle-button" href="#"><img id="img-toogle-buttton" src="./icons/moon.png" alt=""></a>
+                <a id="toogle-btn" href="#"><img id="toogle-btn--img" class="switche" src="./icons/moon.png" alt=""></a>
             </section>
-        </nav> 
-       
-    </header>  
-    
-
-
-    <main>
-        <form class="form__box">
-            <section class="form__inbox">
-                <textarea  required  onclick="limpiarTextArea();"   oninput="validarEntrada();" id="entrada" placeholder="Ingrese el texto aqui:"></textarea>   
-                <p> ⚠️ Solo letras minuscula y sin acentos</p>
+        </nav>      
+  
+    <main class="main">
+        <form class="main__form">
+            <section class="input">
+                <textarea id="entrada" class="input__textarea" onclick="limpiarTextArea();"  onblur="clearDefaultText();"  oninput="validarEntrada();" >Ingrese el texto aquí: </textarea>   
+                <p class="input__alert" > ⚠️ Solo letras minuscula y sin acentos</p>
             </section>
               
-            <section class="form__buttons">   
-                <input onclick="encriptarEntrada();" class="btn encriptar" type="button" value="Encriptar">
-                <input onclick="desencriptarEntrada();"  class="btn desencriptar" type="button" value="Desencriptar">
+            <section class="buttons">   
+                <input class="buttons__btn encriptar" onclick="encriptarEntrada();" type="button" value="Encriptar">
+                <input class="buttons__btn desencriptar" onclick="desencriptarEntrada();" type="button" value="Desencriptar">
             </section>
-        </form> 
-        
+        </form>        
 
-        <section class="outbox-container" >
-            <section class="form__outbox">
-                <div class="form__outbox--img" > 
-                    <img src="./icons/Loupe.png" class="msg--img">
-                </div>
-    
-                <section class="form__outbox--msg">
+        <section class="main__output" >
+            <section class="container">
+                <div class="container__img" > 
+                    <img class="search-img" src="./icons/Loupe.png" >
+                </div>    
+                <section class="container__message">
                     <h4>Ningun mensaje fue encontrado</h4>
                     <h5>Ingrese en el cuadro el texto de que desea encriptar o desencriptar</h5>
-                </section>
-    
-                <section class="form__outbox--result"> 
-                    <h1>Su texto procesado: </h1>                    
-                    <textarea id="result" readonly ></textarea>  
-                    <div class="form__outbox--btncopiar">
-                        <input  onclick="copiarElemento();" type="button" class="btn copiar" value="Copiar">
+                </section>    
+                <section class="container__result"> 
+                                
+                    <textarea id="result" class="input__textarea" readonly ></textarea>  
+                    <div class="button">
+                        <input class="buttons__btn copiar" onclick="copiarElemento();" type="button"  value="Copiar">
                     </div> 
                 </section>                                  
             </section>
@@ -84,22 +67,24 @@
 
     </main>
 
-    <section class="hero__img">
+    <section class="hero">
 
     </section>
 
-    <footer>
-        <section class="left">
-            <ul>      
-                <li><a href="https://www.linkedin.com/in/andrea-campo-585bb31a/">Linkedin</a></li>
-                <li><a href="https://github.com/andreacampog">Github</a></li>
-            </ul>
-        </section>
+    <footer class="footer" > 
+        <div class="footer__socials">
+            <img class="social-image" src="./icons/insta_log.webp" alt="">
+            <a class="social-link" href="https://www.instagram.com/andrea_campog?igsh=MWNvNzBjcWQ2dXNnYw%3D%3D&utm_source=qr">Instagram</a>
+        </div>
 
-        <section class="right">
-            <img src="./icons/insta_log.webp" alt="">
-            <a href="https://www.instagram.com/andrea_campog?igsh=MWNvNzBjcWQ2dXNnYw%3D%3D&utm_source=qr">Instagram</a>
-        </section>      
+        <div class="footer__socials">
+            <img class="social-image" src="./icons/linkedin_2.png" alt="">
+            <a class="social-link" href="https://www.linkedin.com/in/andrea-campo-585bb31a/">Linkedin</a>
+        </div>
+        <div class="footer__socials">
+            <img class="social-image" src="./icons/git.png" alt="">
+            <a class="social-link" href="https://github.com/andreacampog">Github</a>            
+        </div>      
     </footer>
 
     <script src="./app.js" ></script>
