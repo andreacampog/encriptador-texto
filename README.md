@@ -37,3 +37,10 @@ Un footer con los datos del desarrollador
 Habilitar dark-mode
 Un header con la información general del proyecto (links de Trello, Figma propuesto por Alura y link de la información del proyecto )
 
+
+
+![mobile (4)](https://github.com/andreacampog/encriptador-texto/assets/112191466/50057ecd-c1dd-45ff-9afd-c1cda7ac57dc)
+![mobile (3)](https://github.com/andreacampog/encriptador-texto/assets/112191466/cff6874c-31ae-43bf-b66f-e368362d1fd1)
+
+![mobile (2)](https://github.com/andreacampog/encriptador-texto/assets/112191466/8c49a5dc-cb0f-448c-b074-027c6fd72f0b)
+
