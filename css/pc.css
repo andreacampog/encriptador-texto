@@ -1,6 +1,5 @@
 .main{
-    margin-top: 20px;
-
+    margin-top: 40px;  
 }
 .switche{
     width: 60%;
@@ -12,8 +11,25 @@ main{
 .main__form,.main__output{    
     width: 50%;    
 }
+
+.input__alert{    
+    max-width: 100%;  
+    padding: 0.5em;  
+    font-size: 1rem;
+}
+
 .footer{
-    margin: 15px auto;
+    height: 100px;  
+    margin: 20px auto;
+    padding-top: 2px;
+}
+
+
+
+.footer__img-link{
+    width: 60px;    
+    height: 60px; 
+    margin: 10px;
 }
 
 

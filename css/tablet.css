@@ -32,7 +32,6 @@
 .buttons{
     display: flex;    
     justify-content: space-around;
-
     margin-top: 2em;
 }
 
@@ -61,7 +60,3 @@
 }
 
 
-.footer__img-link{
-    width: 60px;    
-    height: 60px; 
-}
