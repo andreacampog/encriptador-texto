@@ -33,7 +33,8 @@ function validarEntrada(){
     }
     else{
         mostrarElemento(cuadroMensajes);
-        return contenido;
+        let newcontenido = contenido.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        return newcontenido;
        } 
     
 }
@@ -62,7 +63,9 @@ function mostrarResultado(resultado){
     ocultarElemento(imagen);
     ocultarElemento(cuadroMensajes);
     cuadroResultado.style.display = 'block';    
-    textoDesencriptado.innerHTML = resultado;    
+    //convertir a mayuscula la priemera letra si prefiero
+    //let contenido = resultado.charAt(0).toUpperCase() + resultado.slice(1);
+    textoDesencriptado.innerHTML = resultado;   
 }
 
 function copiarElemento(){
@@ -154,4 +157,6 @@ btnToogle.addEventListener("click",function(){
         body.classList.add("dark-mode");
         img.setAttribute("src", "./icons/sun.png");
 }});
+
+
 
