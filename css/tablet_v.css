@@ -1,0 +1,51 @@
+.main{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 2px;    
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.main__form,.main__output{    
+    width: 45%;       
+    margin: 0 auto;
+    padding-top: 0;
+
+}
+
+.input__textarea{  
+    min-height: 400px;
+    margin-top: 0;
+}
+
+.buttons__btn {
+    padding: 0.5em;
+    font-size: 2rem;
+}
+
+.button {
+    margin-top: 2em;
+    padding-top: 3em;
+}
+
+.button .copiar{
+    margin: 0 auto;
+}
+
+.container__result{
+    min-height: 480px;
+}
+
+.container__img{
+    display: block;    
+}
+
+.hero{
+    display: none;
+}
+
+.footer{
+    margin: 20px auto;
+}

@@ -11,8 +11,6 @@
     --box-shadow-header:  0px 20px 21px -17px rgba(0,0,0,1);
     --background-areas:white;
 }    
-
-
   
 *{  
     margin: 0;
@@ -23,15 +21,12 @@
 html{
     font-size: 62.5%;  /*1rem = 10px*  1em = 10px*/  
     font-family: 'Inter', sans-serif;
-    line-height: 1.5;
+    line-height: 1.5;    
 }
 
 body{
     color: var(--text-color);
-    background:var(--background-color);
-    max-height: 1vh;
-    max-width: 1680px;    
-    margin: 0 auto;   
+    background:var(--background-color);   
 }
 
 nav{   
@@ -82,6 +77,24 @@ nav{
 }
 
 
+.social-image{
+    width: 50px;
+    height: 50px;  
+}
+
+.social-link{     
+    display: block;
+    padding: 0.5em;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-decoration: none;    
+}
+
+.social-link:hover{
+    color: var(--text-color-hover);
+}
+
+
 .links-deployed{
     visibility: hidden; 
 }
@@ -102,8 +115,7 @@ nav{
 
 .nav__icons a{
     width: 80px;   
-    height: auto;  
-    
+    height: auto;      
 }
 
 .switche{
@@ -111,11 +123,16 @@ nav{
     margin: 0.5em auto;         
     transition: 0.5s;  
     border-radius: 50px;
+    opacity: 0.9;
+    
+}
+.switche:hover{
+    transform: scale(1.2);
 
 }
 
 .main{
-    width: 90%;
+    width: 100%;
     min-width: 375px;
     margin: 0 auto;
 
@@ -142,7 +159,7 @@ nav{
     text-align: center;      
     background: var(--background-areas);  
     border: solid;
-    border-radius: 1em;
+    border-radius: 20px;
     resize: none;     
 }
 
@@ -162,8 +179,9 @@ nav{
 
 .button{
     width: 100%;
+    height: 90px;
     margin: 0 auto;
-    padding-top: 4.8em;
+    margin-top: 4em;
 }
 
 
@@ -278,43 +296,48 @@ nav{
 
 }
 
-.footer{
-    display: flex;  
-    justify-content: center;
-    align-content: center;
+.footer{    
     width: 100%;
-    min-width: 375px;   
+    height: 120px;     
+    min-width: 375px;     
+    margin: 0 auto;  
     padding: 20px;
     border-top: solid;
 }
 
 .footer__socials{
-    width: 30%;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;    
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
 }
 
-.social-image{
-    width: 50px;
+.footer__img-link{
+    display: inline-block;
+    width: 50px;    
     height: 50px;   
-    margin: 0.5em; 
+    margin: 10px;
 }
 
-.social-link{     
-    display: block;
-    padding: 0.5em;
-    font-size: 1.6rem;
+.footer__img-link:hover{
+    transform: scale(1.2);
+}
+
+.image{
+    width: 100%;
+}
+
+.footer__text{
+    margin: 0 auto;
+    font-size: 1rem;
     color: var(--text-color);
-    text-decoration: none;    
-}
+    text-align: center;
 
-.social-link:hover{
-    color: var(--text-color-hover);
 }
-
 
 .dark-mode{
     --background-color:linear-gradient(317deg, rgba(46,122,138,1) 0%, rgba(35,92,104,1) 4%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 80%, rgba(35,92,104,1) 96%, rgba(46,122,138,1) 100%);    
+
     --text-color:white; 
     --text-color-button:white;    
     --box-shadow: 12px 7px 5px 0px rgba(88,102,130,0.49);

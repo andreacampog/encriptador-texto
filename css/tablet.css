@@ -14,6 +14,10 @@
     color: var(--text-color);
 }
 
+.social-link{    
+    font-size: 1.8rem;
+}
+
 .main__form{
     width: 70%;  
     max-width: 600px;
@@ -28,7 +32,7 @@
 .buttons{
     display: flex;    
     justify-content: space-around;
-    align-content: center;
+
     margin-top: 2em;
 }
 
@@ -44,7 +48,6 @@
     max-width: 600px;
 }
 .container__message h5 {
-
     font-size: 1.6rem;
 }
 
@@ -57,9 +60,8 @@
     background-size:cover;
 }
 
-.footer__socials{
-    width: 50%;
-}
-.social-link{    
-    font-size: 1.8rem;
+
+.footer__img-link{
+    width: 60px;    
+    height: 60px; 
 }

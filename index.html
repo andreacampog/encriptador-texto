@@ -11,7 +11,8 @@
 
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="/css/tablet.css" media="(min-width:768px)">
-    <link rel="stylesheet" href="/css/pc.css" media="(min-width:1280px)">
+    <link rel="stylesheet" href="/css/tablet_v.css" media="(min-width:1024px)">
+    <link rel="stylesheet" href="/css/pc.css" media="(min-width:1280px) and (max-width:1680px)">
 </head>
 
 <body>
@@ -19,18 +20,18 @@
             <section class="nav__menu">
                 <img class="hamburguer" onclick="menuHamburguesa();" src="./icons/blueburguer.png" alt="imagen de menu hamburguesa">                 
                     <ul class="links"> 
-                        <li class="links_item"><a class="social-link" href="https://trello.com/b/inCeeXJB/desarrollo-de-challenge-alura">Trello del proyecto</a></li>
-                        <li class="links_item"><a class="social-link" href="https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript">Info Challenge</a></li>               
+                        <li class="links_item"><a class="social-link" href="https://trello.com/b/inCeeXJB/desarrollo-de-challenge-alura">Trello</a></li>
+                        <li class="links_item"><a class="social-link" href="https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript">Instrucciones</a></li>               
                         <li class="links_item"><a class="social-link" href="https://www.figma.com/file/trP3p5nEh7XUyB3n2bomjP/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica?type=design&node-id=0-1&mode=design&t=FcJnCewsMXJHnbQP-0">Figma</a></li>
                      </ul>    
                     <ul class="links-deployed">
                         <li class="links_item"><a  class="social-link" href="https://trello.com/b/inCeeXJB/desarrollo-de-challenge-alura">Trello</a></li>
-                        <li class="links_item"><a class="social-link"  href="https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript">Info Challenge</a></li>               
+                        <li class="links_item"><a class="social-link"  href="https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript">Instrucciones</a></li>               
                         <li class="links_item"><a class="social-link" href="https://www.figma.com/file/trP3p5nEh7XUyB3n2bomjP/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica?type=design&node-id=0-1&mode=design&t=FcJnCewsMXJHnbQP-0">Figma</a></li>
                      </ul> 
             </section>
             <section class="nav__icons" >    
-                <a id="toogle-btn" href="#"><img id="toogle-btn--img" class="switche" src="./icons/moon.png" alt=""></a>
+                <a id="toogle-btn" href="#"><img id="toogle-btn--img" class="switche" src="./icons/moon.png" alt="icono para cambiar a dark-mode"></a>
             </section>
         </nav>      
   
@@ -56,8 +57,7 @@
                     <h4>Ningun mensaje fue encontrado</h4>
                     <h5>Ingrese en el cuadro el texto de que desea encriptar o desencriptar</h5>
                 </section>    
-                <section class="container__result"> 
-                                
+                <section class="container__result">    
                     <textarea id="result" class="input__textarea" readonly ></textarea>  
                     <div class="button">
                         <input class="buttons__btn copiar" onclick="copiarElemento();" type="button"  value="Copiar">
@@ -73,19 +73,12 @@
     </section>
 
     <footer class="footer" > 
-        <div class="footer__socials">
-            <img class="social-image" src="./icons/insta_log.webp" alt="">
-            <a class="social-link" href="https://www.instagram.com/andrea_campog?igsh=MWNvNzBjcWQ2dXNnYw%3D%3D&utm_source=qr">Instagram</a>
-        </div>
-
-        <div class="footer__socials">
-            <img class="social-image" src="./icons/linkedin_2.png" alt="">
-            <a class="social-link" href="https://www.linkedin.com/in/andrea-campo-585bb31a/">Linkedin</a>
-        </div>
-        <div class="footer__socials">
-            <img class="social-image" src="./icons/git.png" alt="">
-            <a class="social-link" href="https://github.com/andreacampog">Github</a>            
-        </div>      
+        <div class="footer__socials">          
+            <a class="footer__img-link" href="https://www.instagram.com/andrea_campog?igsh=MWNvNzBjcWQ2dXNnYw%3D%3D&utm_source=qr"><img class="image" src="./icons/insta_log.webp" alt="logo de instagram"></a>        
+            <a class="footer__img-link" href="https://www.linkedin.com/in/andrea-campo-585bb31a/"><img class="image" src="./icons/linkedin_2.png" alt="logo de linkedin"></a>            
+            <a class="footer__img-link" href="https://github.com/andreacampog"><img class="image" src="./icons/git.png" alt="logo de github"></a>                        
+        </div>  
+        <p class="footer__text">®2024 Andrea Campo</p>    
     </footer>
 
     <script src="./app.js" ></script>

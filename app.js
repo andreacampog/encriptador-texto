@@ -61,8 +61,7 @@ function mostrarElemento(elemento){
 function mostrarResultado(resultado){
     ocultarElemento(imagen);
     ocultarElemento(cuadroMensajes);
-    cuadroResultado.style.display = 'block';
-    
+    cuadroResultado.style.display = 'block';    
     textoDesencriptado.innerHTML = resultado;    
 }
 

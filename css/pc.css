@@ -1,51 +1,19 @@
-.nav{
-    height: 60px;
-}
-
-
 .main{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    margin-top: 2em;
-    margin-bottom: 1em;    
-}
-
-
-.main__form,.main__output{    
-    width: 45%;       
-    margin: 0 auto;
-    padding-top: 0;
+    margin-top: 20px;
 
 }
-
-.input__textarea{  
-    min-height: 380px;
-    margin-top: 0;
-}
-.buttons__btn{ 
-    width: 40%;
-}
-
-.container__result{
-    min-height: 520px;
-}
-
-.container__img{
-    display: block;
-    background-image: url(./icons/Loupe.png);
-}
-
-.hero{
-    display: none;
-}
-
-.footer{
-    padding-top: 2em  ;
-}
-
-.footer__socials{
+.switche{
     width: 60%;
+}
+main{
+    padding-top: 2px;
+    padding-bottom: 10px; 
+}
+.main__form,.main__output{    
+    width: 50%;    
+}
+.footer{
+    margin: 15px auto;
 }
 
 
